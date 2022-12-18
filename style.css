@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
     .section {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
 
 * {
     box-sizing: border-box;
@@ -92,11 +92,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
 }
 
 .section-title {
-
+    
     font-size: 28px;
     font-weight: 400;
     text-transform: uppercase;
@@ -111,9 +111,9 @@ body {
 }
 
 .nav-contacts {
-
+    
     list-style: none;
-
+    
 
 }
 
@@ -131,7 +131,7 @@ body {
 .project-card {
     margin-bottom: 30px;
     max-width: 600px;
-
+   
     background-color: #fff;
     box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
     transition: transform 0.2s ease-in;
@@ -145,11 +145,10 @@ body {
 .card-img {
     width: 100%;
 }
-
 .card-link {
     text-decoration: none;
     color: #000000;
-    display: block;
+    display: block; 
     padding: 20px;
     transition: color 0.2s ease-in;
 }
