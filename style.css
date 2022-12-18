@@ -1,0 +1,172 @@
+@media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HEADER */
+
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    color: rgb(0, 0, 0);
+
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: rgb(145, 139, 135);
+}
+
+/* SECTION */
+
+.section {
+    padding: 70px;
+    /* width: 50%; */
+
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+.section-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section-title-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.section-title {
+    
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+
+    margin-left: 50px;
+}
+
+.avatar {
+    width: 445px;
+}
+
+.nav-contacts {
+    
+    list-style: none;
+    
+
+}
+
+.section-summary {
+    border: 5px solid rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    margin-bottom: 30px;
+    max-width: 600px;
+   
+    background-color: #fff;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+    transition: transform 0.2s ease-in;
+}
+
+.project-card:hover {
+    transform: translateY(-15px);
+
+}
+
+.card-img {
+    width: 100%;
+}
+.card-link {
+    text-decoration: none;
+    color: #000000;
+    display: block; 
+    padding: 20px;
+    transition: color 0.2s ease-in;
+}
+
+.card-link:hover {
+    color: rgb(39, 91, 236);
+}
+
+/* footer */
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer img {
+    width: 70px;
+
+}
