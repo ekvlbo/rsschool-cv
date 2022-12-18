@@ -1,233 +1,173 @@
-@font-face {
-    font-family: 'Glacial Indifference';
-    font-weight: 400;
-    src: url(../fonts/GlacialIndifference-Regular.otf);
-
-}
-
-@font-face {
-    font-family: 'Glacial Indifference';
-    font-weight: 700;
-
-    src: url(../fonts/GlacialIndifference-Bold.otf);
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
 }
 
 * {
-    box-sizing: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
 
-    background-color: white;
+    min-height: 100vh;
 
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
     margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 
 .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
 
+.main-container {
     display: flex;
-    border: 2px solid #9ba4ab;
-    border-radius: 30px;
-    width: 1250px;
-    height: 1790px;
-    margin: 50px;
+    flex-wrap: wrap;
+}
 
+/* HEADER */
+
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+
+    text-decoration: none;
+    font-size: 16px;
+
+    color: rgb(0, 0, 0);
+
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: rgb(145, 139, 135);
+}
+
+/* SECTION */
+
+.section {
+    padding: 70px;
+    /* width: 50%; */
+
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+.section-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
-
-
-.foto {
-    position: relative;
-    z-index: 1;
-    width: 425px;
-    height: 585px;
-    margin: 50px 100px;
-
-}
-
-.container::before {
-    position: absolute;
-    left: 60px;
-    top: 52px;
-
-    content: '';
-
-    width: 430px;
-    height: 540px;
-    border-radius: 30px 0px;
-    background-color: hsl(0, 0%, 65%, 0.5);
-
-
-
-}
-
-
-.container-section {
-    width: 500px;
-    margin-bottom: 80px;
-
-}
-
-.container-left-info {
-    position: absolute;
-    left: 55px;
-    top: 540px;
-    margin-left: 60px;
-}
-
-.section-border {
-
-
-    border: 5px solid #25608d;
-    padding-top: 170px;
+.section-title-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .section-title {
-    font-family: 'Chau Philomene One';
 
-    text-transform: uppercase;
-    font-size: 42px;
-    color: #25608d;
-
-    margin: auto 20px;
-}
-
-.text {
-    font-family: 'Glacial Indifference';
+    font-size: 28px;
     font-weight: 400;
-    font-size: 24px;
-    margin: 50px 20px;
-    line-height: 1.33;
-}
-
-.text ul {
-    padding-left: 0;
-}
-
-.text li {
-
-    margin-bottom: 20px;
-    line-height: 1.33;
-    list-style-type: none;
-}
-
-.text img {
-    width: 15%;
-    margin-right: 15px;
-}
-
-.text-ln {
-    display: flex;
-    align-items: center;
-}
-
-.title {
-    font-family: 'Chau Philomene One';
-    font-size: 56px;
-    margin-top: 105px;
-    margin-right: 100px;
     text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
 
-    line-height: 1.2;
-    color: #25608d;
-
+    margin-left: 50px;
 }
 
-
-.profession {
-    font-size: 60px;
-    text-transform: uppercase;
-
-
-    margin-top: 30px;
-    font-size: 35px;
-    font-family: 'Glacial Indifference';
-    font-weight: 400;
-    color: #193c57;
-}
-
-.container-right {
-    margin: 0;
-}
-
-.container-contacts {
-    margin-top: 75px;
-    font-size: 35px;
-    font-family: 'Glacial Indifference';
-    font-weight: 400;
-    font-size: 30px;
-
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    background-color: #193c57;
+.avatar {
+    width: 445px;
 }
 
 .nav-contacts {
 
-    margin: 45px 0 90px auto;
+    list-style: none;
+
 
 }
 
-.nav-contacts li {
-    list-style-type: none;
+.section-summary {
+    border: 5px solid rgb(0, 0, 0);
+    padding: 20px;
+}
 
+.project {
     display: flex;
-    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.project-card {
+    margin-bottom: 30px;
+    max-width: 600px;
 
-
-.container-contacts::before {
-    position: absolute;
-    left: 349px;
-    top: 330px;
-    z-index: -1;
-    content: '';
-    width: 962px;
-    height: 396px;
-    /* border-radius: 30px 0px; */
-    background-color: hsl(0, 0%, 65%, 0.5);
+    background-color: #fff;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+    transition: transform 0.2s ease-in;
 }
 
+.project-card:hover {
+    transform: translateY(-15px);
 
-.work li {
-    margin-bottom: 70px;
-    list-style-type: none;
 }
 
-
-.company {
-    font-family: 'Glacial Indifference';
-    font-weight: 700;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: #193c57;
-    margin-bottom: 25px;
+.card-img {
+    width: 100%;
 }
 
-.role,
-.season {
-    font-family: 'Glacial Indifference';
+.card-link {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    padding: 20px;
+    transition: color 0.2s ease-in;
+}
 
-    font-size: 24px;
+.card-link:hover {
+    color: rgb(39, 91, 236);
+}
 
+/* footer */
 
-    margin-bottom: 15px;
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer img {
+    width: 70px;
+
 }
